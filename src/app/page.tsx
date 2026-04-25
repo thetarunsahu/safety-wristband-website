@@ -15,6 +15,11 @@ import SosSimulator from "@/components/sections/SosSimulator";
 import UseCases from "@/components/sections/UseCases";
 import HardwareDiagram from "@/components/sections/HardwareDiagram";
 import TechSpecs from "@/components/sections/TechSpecs";
+import LiveDashboard from "@/components/sections/LiveDashboard";
+import BuildJourney from "@/components/sections/BuildJourney";
+import Faq from "@/components/sections/Faq";
+import AboutMaker from "@/components/sections/AboutMaker";
+import FinalCta from "@/components/sections/FinalCta";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -43,7 +48,11 @@ export default function Home() {
             <UseCases />
             <HardwareDiagram />
             <TechSpecs />
-            {/* Phase 3 sections will go here */}
+            <LiveDashboard />
+            <BuildJourney />
+            <Faq />
+            <AboutMaker />
+            <FinalCta />
           </main>
           
           <Footer />
