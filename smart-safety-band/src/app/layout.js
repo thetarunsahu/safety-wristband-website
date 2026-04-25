@@ -13,7 +13,15 @@ const outfit = Outfit({
   display: "swap",
 });
 
+export const viewport = {
+  themeColor: "#000000",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export const metadata = {
+  metadataBase: new URL("https://smartsafetyband.vercel.app"), // Placeholder to be replaced with actual domain
   title: "Smart Safety Wristband — Safety. Reinvented.",
   description:
     "An intelligent IoT wearable that combines real-time health monitoring, GPS tracking, and instant SOS alerts to keep you safe. Built by Tarun Kumar Sahu.",
@@ -26,11 +34,25 @@ export const metadata = {
     "GPS tracking",
     "health monitoring",
   ],
+  authors: [{ name: "Tarun Kumar Sahu" }],
   openGraph: {
     title: "Smart Safety Wristband — Safety. Reinvented.",
     description:
       "An intelligent IoT wearable for real-time safety monitoring and emergency alerts.",
     type: "website",
+    siteName: "Smart Safety Wristband",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smart Safety Wristband — Safety. Reinvented.",
+    description:
+      "An intelligent IoT wearable for real-time safety monitoring and emergency alerts.",
+    creator: "@thetarunsahu",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
