@@ -11,6 +11,10 @@ import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
+import SosSimulator from "@/components/sections/SosSimulator";
+import UseCases from "@/components/sections/UseCases";
+import HardwareDiagram from "@/components/sections/HardwareDiagram";
+import TechSpecs from "@/components/sections/TechSpecs";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -35,7 +39,11 @@ export default function Home() {
             <Problem />
             <Features />
             <HowItWorks />
-            {/* Phase 2 and 3 sections will go here */}
+            <SosSimulator />
+            <UseCases />
+            <HardwareDiagram />
+            <TechSpecs />
+            {/* Phase 3 sections will go here */}
           </main>
           
           <Footer />
