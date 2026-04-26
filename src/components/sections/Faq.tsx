@@ -37,13 +37,13 @@ export default function Faq() {
   );
 
   return (
-    <section className="py-32 relative bg-black border-t border-white/5">
+    <section className="relative bg-black">
       <div className="section-container max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Frequently Asked <span className="text-cyan">Questions.</span>
+          <h2 className="tracking-tight mb-4">
+            Frequently Asked Questions.
           </h2>
-          <p className="text-gray-400 text-lg mb-8">
+          <p className="section-description mx-auto text-center mb-8">
             Everything you need to know about the hardware, software, and deployment.
           </p>
           

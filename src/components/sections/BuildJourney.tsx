@@ -29,13 +29,13 @@ export default function BuildJourney() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section id="build-journey" className="py-32 relative bg-black">
+    <section id="build-journey" className="relative bg-black">
       <div className="section-container">
         <div className="mb-24 text-center md:text-left">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            From Breadboard to <span className="text-cyan">Wrist.</span>
+          <h2 className="tracking-tight mb-4">
+            From Breadboard to Wrist.
           </h2>
-          <p className="text-gray-400 max-w-2xl text-lg">
+          <p className="section-description">
             A look inside the hardware development process. Overcoming power constraints, signal interference, and miniaturization challenges.
           </p>
         </div>
@@ -67,9 +67,9 @@ export default function BuildJourney() {
                   animate={inView ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.6, delay: i * 0.3 }}
                 >
-                  <p className="text-cyan font-mono text-sm mb-2">{item.phase}</p>
-                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-gray-400">{item.desc}</p>
+                  <span className="timeline-date">{item.phase}</span>
+                  <h3 className="text-2xl font-bold mb-4 text-white">{item.title}</h3>
+                  <p className="text-[#777] text-[15px] leading-relaxed">{item.desc}</p>
                 </motion.div>
 
                 {/* Image */}

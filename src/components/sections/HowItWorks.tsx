@@ -30,16 +30,17 @@ export default function HowItWorks() {
   const { ref, inView } = useInView(0.2);
 
   return (
-    <section id="how-it-works" className="py-32 relative bg-black border-t border-white/5 overflow-hidden">
+    <section id="how-it-works" className="relative bg-black overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="section-container relative z-10">
         <div className="text-center mb-24">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          {/* ✅ KEEP cyan — "Under 2 Seconds" is one of the 3 allowed */}
+          <h2 className="tracking-tight mb-4">
             Under <span className="text-cyan">2 Seconds.</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
+          <p className="section-description mx-auto text-center">
             From the moment you press the button, the hardware executes a hardcoded sequence to guarantee message delivery.
           </p>
         </div>
@@ -71,8 +72,8 @@ export default function HowItWorks() {
 
                 <div className="md:mt-20 text-center md:text-left">
                   <span className="text-6xl font-mono font-bold text-white/5 block mb-4">{step.num}</span>
-                  <h3 className="text-xl font-bold text-white mb-2">{step.title}</h3>
-                  <p className="text-sm text-gray-400">{step.desc}</p>
+                  <h3 className="text-white mb-2">{step.title}</h3>
+                  <p className="text-sm text-[#777]">{step.desc}</p>
                 </div>
               </motion.div>
             ))}

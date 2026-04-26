@@ -9,9 +9,9 @@ export default function AboutMaker() {
   const { ref, inView } = useInView(0.2);
 
   return (
-    <section id="about" className="py-32 relative bg-[#050505]">
+    <section id="about" className="relative bg-[#080808]">
       <div className="section-container" ref={ref}>
-        <div className="glass rounded-3xl border border-white/10 overflow-hidden max-w-5xl mx-auto relative">
+        <div className="rounded-3xl border border-[#1A1A1A] overflow-hidden max-w-5xl mx-auto relative bg-[#0D0D0D]">
           
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Image Side */}
@@ -22,7 +22,7 @@ export default function AboutMaker() {
                 fill 
                 className="object-cover object-top opacity-80"
               />
-              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#050505] via-[#050505]/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-[#0D0D0D] via-[#0D0D0D]/50 to-transparent" />
             </div>
 
             {/* Content Side */}
@@ -36,10 +36,10 @@ export default function AboutMaker() {
                   The Maker
                 </div>
                 
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Tarun Kumar Sahu</h2>
-                <h3 className="text-xl text-gray-400 mb-6 font-[family-name:var(--font-outfit)]">Developer & Hardware Engineer</h3>
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white">Tarun Kumar Sahu</h2>
+                <p className="text-[13px] text-[#888] mb-6 font-[family-name:var(--font-outfit)]">Developer & Hardware Engineer</p>
                 
-                <p className="text-gray-400 mb-8 leading-relaxed">
+                <p className="text-[14px] text-[#777] mb-8 leading-[1.75]">
                   I built SafeWrist because I believe personal safety technology shouldn't rely on expensive smartphones or unreliable bluetooth connections. By bridging the gap between embedded systems and modern web technologies, we can create tools that actually save lives.
                 </p>
 

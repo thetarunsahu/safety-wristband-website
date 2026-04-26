@@ -39,14 +39,14 @@ export default function TechSpecs() {
   const [activeTab, setActiveTab] = useState<TabKey>("core");
 
   return (
-    <section id="tech-specs" className="py-32 relative bg-[#050505] border-t border-white/5">
+    <section id="tech-specs" className="relative bg-black">
       <div className="section-container">
         <div className="flex flex-col md:flex-row gap-16 items-start">
           
           {/* Left: Headers & Tabs */}
           <div className="w-full md:w-1/3">
-            <h2 className="text-4xl font-bold tracking-tight mb-8">
-              Technical <span className="text-cyan">Specifications.</span>
+            <h2 className="tracking-tight mb-8">
+              Technical Specifications.
             </h2>
             
             <div className="flex flex-col gap-2">

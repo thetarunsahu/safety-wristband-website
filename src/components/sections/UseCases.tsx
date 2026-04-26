@@ -26,14 +26,14 @@ export default function UseCases() {
   const { ref, inView } = useInView(0.1);
 
   return (
-    <section className="py-32 relative bg-black border-t border-white/5">
+    <section className="relative bg-[#080808]">
       <div className="section-container" ref={ref}>
         <div className="mb-16 md:w-1/2">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Built for <span className="text-cyan">real life.</span>
+          <h2 className="tracking-tight mb-4">
+            Built for real life.
           </h2>
-          <p className="text-gray-400 text-lg">
-            Safety isn't one-size-fits-all. SafeWrist adapts to different vulnerabilities through flexible hardware and intelligent software.
+          <p className="section-description">
+            Safety isn&apos;t one-size-fits-all. SafeWrist adapts to different vulnerabilities through flexible hardware and intelligent software.
           </p>
         </div>
 

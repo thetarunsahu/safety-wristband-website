@@ -26,17 +26,17 @@ export default function LiveDashboard() {
   }, []);
 
   return (
-    <section className="py-32 relative bg-black overflow-hidden">
+    <section className="relative bg-[#080808] overflow-hidden">
       {/* Background Grid & Glow */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,229,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(0,229,255,0.02)_1px,transparent_1px)] bg-[size:30px_30px]" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-cyan/5 blur-[120px] rounded-[100%]" />
 
       <div className="section-container relative z-10">
         <div className="mb-16 md:w-1/2">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
-            Command <span className="text-cyan">Center.</span>
+          <h2 className="tracking-tight mb-4">
+            Command Center.
           </h2>
-          <p className="text-gray-400 text-lg">
+          <p className="section-description">
             A dedicated web dashboard allows emergency contacts to monitor real-time vitals and precise location during an active SOS event.
           </p>
         </div>
